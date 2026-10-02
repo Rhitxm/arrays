@@ -14,6 +14,27 @@ int marks[3];
  
     return 0;
 }
+//running above code using functins
+#include <stdio.h>
+void MARKS(int marks[3]);
+
+int main() {
+int marks[3];
+    printf("enter phy:\n");
+    scanf("%d", &marks[0]);
+    printf("enter chem:\n");
+    scanf("%d", &marks[1]);
+    printf("enter maths\n");
+    scanf("%d", &marks[2]);
+    MARKS(marks);
+ 
+    return 0;
+}
+
+    void MARKS(int marks[3]){
+    printf("phy:%d, chem:%d, maths:%d", marks[0], marks[1], marks[2]);
+} 
+
 
 //printing prices of three different items including gst
 #include <stdio.h>
